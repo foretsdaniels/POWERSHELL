@@ -1,4 +1,0 @@
-$sound = New-Object System.Media.SoundPlayer
-$sound.SoundLocation="c:\WINDOWS\Media\notify.wav"
-$sound.Play()
-$sound.Stop()
