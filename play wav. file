@@ -1,0 +1,15 @@
+$sound = New-Object System.Media.SoundPlayer
+$sound.SoundLocation="c:\WINDOWS\Media\notify.wav"
+$sound.Play()
+$sound.Stop()
+
+$PLAYER=NEW-OBJECT –ComObject ‘MediaPlayer.MediaPlayer’
+$PLAYER.Filname=”C:WindowsMediachimes.wav” 
+$PLAYER.play()
+
+Print 
+function global:INVOKE-MEDIA ($Filename) {
+$PLAYER=NEW-OBJECT –ComObject ‘MediaPlayer.MediaPlayer’ 
+$PLAYER.play()
+}
+INVOKE-MEDIA ‘C:WindowsMediaChimes.wav’
